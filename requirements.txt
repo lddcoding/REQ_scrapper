@@ -6,6 +6,7 @@ alembic==1.13.1
 altair==4.2.2
 annotated-types==0.6.0
 anyio==4.3.0
+pytz==2023.3
 appdirs==1.4.4
 asgiref==3.8.1
 asttokens==2.4.1
