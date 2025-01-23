@@ -52,9 +52,6 @@ def main():
             # Remove rows where NOM_ASSUJ contains "QUÉBEC INC"
             df = df[~df['NOM_ASSUJ'].str.contains("QUÉBEC INC", case=False, na=False)]
 
-            # Use regex to remove rows where 'DAT_FIN_NOM_ASSUJ' contains a date in the format YYYY-MM-DD
-            df = df[~df['DAT_FIN_NOM_ASSUJ'].str.match(r'\d{4}-\d{2}-\d{2}', na=False)]
-
             # Add a button to start filtering and adding websites
             if st.button('Filter and Add Websites'):
                 # API key for Google Custom Search API (your existing key)
